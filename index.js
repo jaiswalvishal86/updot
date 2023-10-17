@@ -252,10 +252,15 @@ const onInteraction = () => {
   loaded = true;
 
   const modelViewer = document.createElement("script");
+  const swiperScript = document.createElement("script");
   modelViewer.type = "module";
+  swiperScript.type = "module";
   modelViewer.src =
     "https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js";
   body.appendChild(modelViewer);
+  swiperScript.src =
+    "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.0/swiper-bundle.min.js";
+  body.appendChild(swiperScript);
   gsap.to(".updot_logo__large", {
     yPercent: -100,
     ease: "power4.easeInOut",
