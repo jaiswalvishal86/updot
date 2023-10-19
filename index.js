@@ -252,15 +252,15 @@ const onInteraction = () => {
   loaded = true;
 
   const modelViewer = document.createElement("script");
-  const swiperScript = document.createElement("script");
+  const lottieScript = document.createElement("script");
   modelViewer.type = "module";
-  swiperScript.type = "module";
+  lottieScript.type = "module";
   modelViewer.src =
     "https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js";
   body.appendChild(modelViewer);
-  swiperScript.src =
-    "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.0/swiper-bundle.min.js";
-  body.appendChild(swiperScript);
+  lottieScript.src =
+    "https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js";
+  body.appendChild(lottieScript);
   gsap.to(".updot_logo__large", {
     yPercent: -100,
     ease: "power4.easeInOut",
