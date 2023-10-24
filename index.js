@@ -246,7 +246,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     },
   });
 
-  $("technology_tab__desktop").each(function (index) {
+  $(".clients_logo__wrapper").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".body");
 
@@ -255,19 +255,25 @@ window.addEventListener("DOMContentLoaded", (event) => {
         trigger: triggerElement,
         // trigger element - viewport
         start: "top top",
-        end: "bottom top",
-        scrub: 2,
+        end: "center bottom",
+        scrub: 1,
       },
     });
-    tl.fromTo(
-      targetElement,
-      {
-        backgroundColor: "#ffffff",
-      },
+    tl.to(
+      ".mobile_navbar",
       {
         backgroundColor: "#f8f8f8",
         duration: 1,
-      }
+      },
+      "<"
+    );
+    tl.to(
+      ".gray_spacer",
+      {
+        backgroundColor: "#f8f8f8",
+        duration: 1,
+      },
+      "<"
     );
   });
 
@@ -281,7 +287,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         // trigger element - viewport
         start: "top +40%, top",
         end: "center bottom",
-        scrub: 2,
+        scrub: 1,
       },
     });
     tl.fromTo(
@@ -296,22 +302,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
         duration: 1,
       }
     );
-    tl.fromTo(
+    tl.to(
       ".mobile_navbar",
-      {
-        backgroundColor: "#f8f8f8",
-      },
       {
         backgroundColor: "#000000",
         duration: 1,
       },
       "<"
     );
-    tl.fromTo(
+    tl.to(
       ".gray_spacer",
-      {
-        backgroundColor: "#f8f8f8",
-      },
       {
         backgroundColor: "#000000",
         duration: 1,
