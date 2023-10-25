@@ -454,23 +454,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     );
   });
 });
-
-// Detect different screens.
-$(window)
-  .resize(function () {
-    // Detect the current screen width.
-    let width = $(window).width();
-    // Determine what you define a as a mobile screen size.
-    let mobileScreen = 990;
-    // Check whether the condition applies.
-    if (width <= mobileScreen) {
-      // Change every href attribute of every a element with #
-      $(".technology_card").attr("href", "#");
-      // You can also hide them, if you want, with
-      // $('a').hide();
-    } else {
-      // Do nothing otherwise,
-      // or change the href attribute back to an actual url, using ids.
-    }
-  })
-  .resize(); // Trigger the re-size event on page load.
