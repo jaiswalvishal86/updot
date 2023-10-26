@@ -189,7 +189,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       loop: true,
       loopedSlides: 4,
       speed: 800,
-      keyboard: true,
+      // keyboard: true,
       centeredSlides: true,
     });
 
