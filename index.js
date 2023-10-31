@@ -285,7 +285,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       scrollTrigger: {
         trigger: triggerElement,
         // trigger element - viewport
-        start: "top +40%, top",
+        start: "top +50%, top",
         end: "center bottom",
         scrub: 1,
       },
@@ -448,6 +448,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
       },
       {
         color: "#ffffff",
+        duration: 1,
+      },
+      "<"
+    );
+    tl.fromTo(
+      ".technology_card",
+      {
+        color: "#ffffff",
+      },
+      {
+        color: "#2c2c2c",
         duration: 1,
       },
       "<"
