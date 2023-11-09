@@ -259,16 +259,22 @@ window.addEventListener("DOMContentLoaded", (event) => {
         scrub: 1,
       },
     });
-    tl.to(
+    tl.fromTo(
       ".mobile_navbar",
+      {
+        backgroundColor: "#d4d4d4",
+      },
       {
         backgroundColor: "#f8f8f8",
         duration: 1,
       },
       "<"
     );
-    tl.to(
+    tl.fromTo(
       ".gray_spacer",
+      {
+        backgroundColor: "#d4d4d4",
+      },
       {
         backgroundColor: "#f8f8f8",
         duration: 1,
