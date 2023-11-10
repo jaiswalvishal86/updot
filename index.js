@@ -110,9 +110,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
           opacity: 0,
           yPercent: 100,
           skewY: 8,
-          duration: 0.8,
+          duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.5 },
+          stagger: { amount: 0.2 },
         });
       }
       if (index < headings.length - 1) {
@@ -121,9 +121,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
           opacity: 0,
           yPercent: -100,
           skewY: -2,
-          duration: 0.8,
+          duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.5 },
+          stagger: { amount: 0.2 },
         });
       }
     });
@@ -139,9 +139,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
           opacity: 0,
           yPercent: 100,
           skewY: 4,
-          duration: 0.8,
+          duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.5 },
+          stagger: { amount: 0.2 },
         });
       }
       if (index < headings.length - 1) {
@@ -150,9 +150,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
           opacity: 0,
           yPercent: -100,
           skewY: -2,
-          duration: 0.8,
+          duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.5 },
+          stagger: { amount: 0.2 },
         });
       }
     });
@@ -166,7 +166,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       if (index > 0) {
         tl.from($(this).find(".hero_img"), {
           opacity: 0,
-          duration: 0.8,
+          duration: 0.5,
           ease: "power2.easeOut",
         });
       }
@@ -174,7 +174,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         tl.to($(this).find(".hero_img"), {
           delay: 6,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.5,
           ease: "power2.easeOut",
         });
       }
