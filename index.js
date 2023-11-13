@@ -300,7 +300,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       targetElement,
       {
         backgroundColor: "#f8f8f8",
-        color: "#000000",
+        // color: "#000000",
       },
       {
         backgroundColor: "#000000",
