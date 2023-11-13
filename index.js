@@ -304,7 +304,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       },
       {
         backgroundColor: "#000000",
-        color: "#ffffff",
+        // color: "#ffffff",
         duration: 1,
       }
     );
