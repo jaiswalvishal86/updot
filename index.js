@@ -172,7 +172,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
       if (index < images.length - 1) {
         tl.to($(this).find(".hero_img"), {
-          delay: 6,
+          delay: 5,
           opacity: 0,
           duration: 0.5,
           ease: "power2.easeOut",
