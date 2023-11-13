@@ -112,7 +112,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           skewY: 8,
           duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.2 },
+          stagger: { amount: 0.3 },
         });
       }
       if (index < headings.length - 1) {
@@ -123,7 +123,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           skewY: -2,
           duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.2 },
+          stagger: { amount: 0.3 },
         });
       }
     });
@@ -141,7 +141,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           skewY: 4,
           duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.2 },
+          stagger: { amount: 0.3 },
         });
       }
       if (index < headings.length - 1) {
@@ -152,7 +152,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           skewY: -2,
           duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.2 },
+          stagger: { amount: 0.3 },
         });
       }
     });
@@ -167,15 +167,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
         tl.from($(this).find(".hero_img"), {
           opacity: 0,
           duration: 0.5,
-          ease: "power2.easeOut",
+          ease: "power4.easeInOut",
         });
       }
       if (index < images.length - 1) {
         tl.to($(this).find(".hero_img"), {
-          delay: 5,
+          delay: 5.5,
           opacity: 0,
           duration: 0.5,
-          ease: "power2.easeOut",
+          ease: "power4.easeInOut",
         });
       }
     });
