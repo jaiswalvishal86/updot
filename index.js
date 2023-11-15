@@ -491,5 +491,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
       },
       "<"
     );
+    tl.fromTo(
+      ".case_study__subtext",
+      {
+        color: "#000000",
+      },
+      {
+        color: "#ffffff",
+        duration: 1,
+      },
+      "<"
+    );
   });
 });
