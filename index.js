@@ -461,10 +461,32 @@ window.addEventListener("DOMContentLoaded", (event) => {
     tl.fromTo(
       ".technology_card",
       {
-        color: "#ffffff",
+        backgroundColor: "#ffffff",
       },
       {
-        color: "#2c2c2c",
+        backgroundColor: "#2c2c2c",
+        duration: 1,
+      },
+      "<"
+    );
+    tl.fromTo(
+      ".technology_content__wrapper",
+      {
+        color: "#000000",
+      },
+      {
+        color: "#ffffff",
+        duration: 1,
+      },
+      "<"
+    );
+    tl.fromTo(
+      ".insight_card__content",
+      {
+        color: "#000000",
+      },
+      {
+        color: "#ffffff",
         duration: 1,
       },
       "<"
