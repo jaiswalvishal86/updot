@@ -96,7 +96,7 @@ window.Webflow.push(() => {
 window.addEventListener("DOMContentLoaded", (event) => {
   // Split text into spans
   let typeSplit = new SplitType("[text-split]", {
-    types: "words, chars",
+    types: "words",
     tagName: "span",
   });
 
