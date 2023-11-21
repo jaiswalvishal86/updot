@@ -20,7 +20,7 @@ const onInteraction = () => {
   gsap.to(".updot_logo__large", {
     yPercent: -100,
     ease: "power4.easeInOut",
-    duration: 1.2,
+    duration: 1,
   });
 };
 
@@ -42,7 +42,7 @@ window.Webflow.push(() => {
           gsap.set(".loader", { visibility: "hidden" });
         },
       })
-      .to(".dot", 0.01, {
+      .to(".dot", 0.1, {
         transformOrigin: "50% 100%",
         yoyo: true,
         scale: 0.8,
@@ -50,41 +50,41 @@ window.Webflow.push(() => {
       })
       .to(".dot", 0.8, {
         yPercent: -500,
-        scaleY: 1.4,
-        scaleX: 1,
-        ease: Circ.easeOut,
+        scaleY: 1.6,
+        scaleX: 1.45,
+        ease: Circ.inOut,
         yoyo: true,
         repeat: 1,
       })
-      .to(".dot", 1, {
+      .to(".dot", 0.8, {
         yPercent: 500,
-        scaleY: 1.4,
-        scaleX: 1,
-        ease: Circ.easeOut,
+        scaleY: 1.6,
+        scaleX: 1.45,
+        ease: Circ.inOut,
         yoyo: true,
         repeat: 1,
       })
-      .to(".dot", 0.5, {
+      .to(".dot", 0.8, {
         yPercent: -250,
         scaleY: 0,
         scaleX: 0,
-        ease: Circ.easInOut,
+        ease: "power2.easeIn",
         yoyo: true,
       })
       .to(
         ".loader_logo__wrapper",
         {
           height: 0,
-          duration: 0.5,
-          ease: "power2.inOut",
+          duration: 0.6,
+          ease: "power2.easeInOut",
         },
-        "<+0.2"
+        "<+0.4"
       )
       .to(
         ".loader",
         {
           height: 0,
-          duration: 1,
+          duration: 0.9,
           ease: "power2.inOut",
         },
         "<+0.1"
@@ -109,10 +109,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
         tl.from($(this).find(".word"), {
           opacity: 0,
           yPercent: 100,
-          skewY: 8,
+          skewY: 12,
           duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.3 },
+          stagger: { amount: 0.25 },
         });
       }
       if (index < headings.length - 1) {
@@ -123,7 +123,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           skewY: -2,
           duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.3 },
+          stagger: { amount: 0.25 },
         });
       }
     });
@@ -138,10 +138,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
         tl.from($(this).find(".word"), {
           opacity: 0,
           yPercent: 100,
-          skewY: 4,
+          skewY: 6,
           duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.3 },
+          stagger: { amount: 0.25 },
         });
       }
       if (index < headings.length - 1) {
@@ -152,7 +152,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           skewY: -2,
           duration: 0.5,
           ease: "power4.easeInOut",
-          stagger: { amount: 0.3 },
+          stagger: { amount: 0.25 },
         });
       }
     });
@@ -188,7 +188,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       slidesPerView: 1,
       loop: true,
       loopedSlides: 4,
-      speed: 800,
+      speed: 750,
       // keyboard: true,
       centeredSlides: true,
     });
