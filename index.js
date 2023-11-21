@@ -42,7 +42,7 @@ window.Webflow.push(() => {
           gsap.set(".loader", { visibility: "hidden" });
         },
       })
-      .to(".dot", 0.1, {
+      .to(".dot", 0.01, {
         transformOrigin: "50% 100%",
         yoyo: true,
         scale: 0.8,
@@ -52,7 +52,7 @@ window.Webflow.push(() => {
         yPercent: -500,
         scaleY: 1.6,
         scaleX: 1.45,
-        ease: Circ.inOut,
+        ease: Circ.easeOut,
         yoyo: true,
         repeat: 1,
       })
@@ -60,7 +60,7 @@ window.Webflow.push(() => {
         yPercent: 500,
         scaleY: 1.6,
         scaleX: 1.45,
-        ease: Circ.inOut,
+        ease: "power4.easeInOut",
         yoyo: true,
         repeat: 1,
       })
@@ -68,23 +68,22 @@ window.Webflow.push(() => {
         yPercent: -250,
         scaleY: 0,
         scaleX: 0,
-        ease: "power2.easeIn",
-        yoyo: true,
+        ease: Circ.easeOut,
       })
       .to(
         ".loader_logo__wrapper",
         {
           height: 0,
           duration: 0.6,
-          ease: "power2.easeInOut",
+          ease: "power2.inOut",
         },
-        "<+0.4"
+        "<+0.2"
       )
       .to(
         ".loader",
         {
           height: 0,
-          duration: 0.9,
+          duration: 0.8,
           ease: "power2.inOut",
         },
         "<+0.1"
