@@ -83,7 +83,7 @@ window.Webflow.push(() => {
         ".loader",
         {
           height: 0,
-          duration: 0.8,
+          duration: 0.9,
           ease: "power2.inOut",
         },
         "<+0.1"
