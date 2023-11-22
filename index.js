@@ -501,5 +501,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
       },
       "<"
     );
+    tl.fromTo(
+      ".slide_title__wrapper",
+      {
+        color: "#ffffff",
+      },
+      {
+        color: "#4e4e4e",
+        duration: 1,
+      },
+      "<"
+    );
   });
 });
