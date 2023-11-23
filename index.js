@@ -182,6 +182,22 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
   $(".tab_2").addClass("w--current");
 
+  function removeGalleryOnSmallViewport() {
+    var viewportWidth =
+      window.innerWidth || document.documentElement.clientWidth;
+
+    if (viewportWidth <= 767) {
+      // You can adjust this threshold as needed
+      var gallery = document.getElementById("gallery");
+      if (gallery) {
+        gallery.parentNode.removeChild(gallery);
+      }
+    }
+  }
+
+  window.addEventListener("load", removeGalleryOnSmallViewport);
+  window.addEventListener("resize", removeGalleryOnSmallViewport);
+
   $(".slider_gallery__component").each(function (index) {
     const bgSwiper = new Swiper($(this).find(".swiper.is-slider-bg")[0], {
       slidesPerView: 1,
